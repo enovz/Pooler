@@ -16,7 +16,7 @@ var morgan        = require('morgan');
 //add dependencies to stack
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../client3/'))); //connect to Angular client
+//app.use(express.static(path.join(__dirname, '../client3/'))); //connect to Angular client
 app.use(cookieParser());
 app.use(cors()); 
 app.use(morgan('dev'));
@@ -26,8 +26,6 @@ app.use(passport.initialize());
 //routes
 //var routes = require('./src/routes');
 //app.use('/', routes);
-
-
 
 //error handler
 if (app.get('env') === 'development') {
