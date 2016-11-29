@@ -1,4 +1,4 @@
 
 'use strict';
 
-const server = require('../api/server/server');
+const server = require('../lib/server/server');
